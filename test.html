@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Time Tracking Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="dashboard">
+        <!-- PROFILE CARD -->
+        <section class="profile-card">
+          <div class="profile-card__top">
+            <img
+              class="profile-card__avatar"
+              src="https://via.placeholder.com/80"
+              alt="Jeremy Robson"
+            />
+            <div class="profile-card__info">
+              <p class="profile-card__label">Report for</p>
+              <h1 class="profile-card__name">Jeremy Robson</h1>
+            </div>
+          </div>
+
+          <nav class="profile-card__tabs">
+            <button class="tab tab--active">Daily</button>
+            <button class="tab">Weekly</button>
+            <button class="tab">Monthly</button>
+          </nav>
+        </section>
+
+        <!-- ACTIVITY CARDS -->
+        <section class="cards-grid">
+          <article class="time-card time-card--work">
+            <div class="time-card__header"></div>
+            <div class="time-card__body">
+              <header class="time-card__top">
+                <h2 class="time-card__title">Work</h2>
+                <span class="time-card__menu">•••</span>
+              </header>
+              <p class="time-card__hours">32hrs</p>
+              <p class="time-card__prev">Last Week - 36hrs</p>
+            </div>
+          </article>
+
+          <article class="time-card time-card--play">
+            <div class="time-card__header"></div>
+            <div class="time-card__body">
+              <header class="time-card__top">
+                <h2 class="time-card__title">Play</h2>
+                <span class="time-card__menu">•••</span>
+              </header>
+              <p class="time-card__hours">10hrs</p>
+              <p class="time-card__prev">Last Week - 8hrs</p>
+            </div>
+          </article>
+
+          <article class="time-card time-card--study">
+            <div class="time-card__header"></div>
+            <div class="time-card__body">
+              <header class="time-card__top">
+                <h2 class="time-card__title">Study</h2>
+                <span class="time-card__menu">•••</span>
+              </header>
+              <p class="time-card__hours">4hrs</p>
+              <p class="time-card__prev">Last Week - 7hrs</p>
+            </div>
+          </article>
+
+          <article class="time-card time-card--exercise">
+            <div class="time-card__header"></div>
+            <div class="time-card__body">
+              <header class="time-card__top">
+                <h2 class="time-card__title">Exercise</h2>
+                <span class="time-card__menu">•••</span>
+              </header>
+              <p class="time-card__hours">4hrs</p>
+              <p class="time-card__prev">Last Week - 5hrs</p>
+            </div>
+          </article>
+
+          <article class="time-card time-card--social">
+            <div class="time-card__header"></div>
+            <div class="time-card__body">
+              <header class="time-card__top">
+                <h2 class="time-card__title">Social</h2>
+                <span class="time-card__menu">•••</span>
+              </header>
+              <p class="time-card__hours">5hrs</p>
+              <p class="time-card__prev">Last Week - 10hrs</p>
+            </div>
+          </article>
+
+          <article class="time-card time-card--selfcare">
+            <div class="time-card__header"></div>
+            <div class="time-card__body">
+              <header class="time-card__top">
+                <h2 class="time-card__title">Self Care</h2>
+                <span class="time-card__menu">•••</span>
+              </header>
+              <p class="time-card__hours">2hrs</p>
+              <p class="time-card__prev">Last Week - 2hrs</p>
+            </div>
+          </article>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
