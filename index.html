@@ -1,80 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <title>Time Tracking Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="dashboard">
+        <!-- PROFILE CARD -->
+        <section class="profile-card">
+          <div class="profile-card__top">
+            <img
+              class="profile-card__avatar"
+              src="https://via.placeholder.com/80"
+              alt="Jeremy Robson"
+            />
+            <div class="profile-card__info">
+              <p class="profile-card__label">Report for</p>
+              <h1 class="profile-card__name">Jeremy Robson</h1>
+            </div>
+          </div>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
+          <nav class="profile-card__tabs">
+            <button class="tab tab--active">Daily</button>
+            <button class="tab">Weekly</button>
+            <button class="tab">Monthly</button>
+          </nav>
+        </section>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+        <!-- ACTIVITY CARDS -->
+        <section class="cards-grid">
+          <article class="time-card time-card--work">
+            <div class="time-card__header"></div>
+            <div class="time-card__body">
+              <header class="time-card__top">
+                <h2 class="time-card__title">Work</h2>
+                <span class="time-card__menu">•••</span>
+              </header>
+              <p class="time-card__hours">32hrs</p>
+              <p class="time-card__prev">Last Week - 36hrs</p>
+            </div>
+          </article>
 
-  Report for
-  Jeremy Robson
+          <article class="time-card time-card--play">
+            <div class="time-card__header"></div>
+            <div class="time-card__body">
+              <header class="time-card__top">
+                <h2 class="time-card__title">Play</h2>
+                <span class="time-card__menu">•••</span>
+              </header>
+              <p class="time-card__hours">10hrs</p>
+              <p class="time-card__prev">Last Week - 8hrs</p>
+            </div>
+          </article>
 
-  Daily
-  Weekly
-  Monthly
+          <article class="time-card time-card--study">
+            <div class="time-card__header"></div>
+            <div class="time-card__body">
+              <header class="time-card__top">
+                <h2 class="time-card__title">Study</h2>
+                <span class="time-card__menu">•••</span>
+              </header>
+              <p class="time-card__hours">4hrs</p>
+              <p class="time-card__prev">Last Week - 7hrs</p>
+            </div>
+          </article>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+          <article class="time-card time-card--exercise">
+            <div class="time-card__header"></div>
+            <div class="time-card__body">
+              <header class="time-card__top">
+                <h2 class="time-card__title">Exercise</h2>
+                <span class="time-card__menu">•••</span>
+              </header>
+              <p class="time-card__hours">4hrs</p>
+              <p class="time-card__prev">Last Week - 5hrs</p>
+            </div>
+          </article>
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+          <article class="time-card time-card--social">
+            <div class="time-card__header"></div>
+            <div class="time-card__body">
+              <header class="time-card__top">
+                <h2 class="time-card__title">Social</h2>
+                <span class="time-card__menu">•••</span>
+              </header>
+              <p class="time-card__hours">5hrs</p>
+              <p class="time-card__prev">Last Week - 10hrs</p>
+            </div>
+          </article>
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+          <article class="time-card time-card--selfcare">
+            <div class="time-card__header"></div>
+            <div class="time-card__body">
+              <header class="time-card__top">
+                <h2 class="time-card__title">Self Care</h2>
+                <span class="time-card__menu">•••</span>
+              </header>
+              <p class="time-card__hours">2hrs</p>
+              <p class="time-card__prev">Last Week - 2hrs</p>
+            </div>
+          </article>
+        </section>
+      </section>
+    </main>
+  </body>
 </html>
