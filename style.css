@@ -148,11 +148,13 @@ body {
   height: 3rem;
   position: relative;
   overflow: hidden;
+  height: 57px;
 }
 .time-card__header img {
   position: absolute;
-  width: 77px;
-  height: 47px;
+  width: 80px;
+  height: 55px;
+  top: -4px;
   right: 1rem;
   transform: rotate(4deg);
 }
@@ -289,10 +291,13 @@ body {
     height: 213px;
     width: 188px;
   }
+  .time-card__header {
+    height: 45px;
+  }
   .time-card__body {
     padding: 25px 21px;
     width: 188px;
-    height: 213px;
+    height: 180px;
   }
 
   .time-card__hours {
@@ -343,7 +348,6 @@ body {
 
   .cards-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    align-content: stretch;
     place-items: center;
     gap: 2rem;
     width: 829px;
@@ -357,7 +361,7 @@ body {
   }
   .time-card__body {
     width: 255px;
-    height: 244px;
+    height: 199px;
     padding: 2rem;
   }
   .time-card {
@@ -373,5 +377,8 @@ body {
   .flex-p-container {
     font: var(--text-5r);
     font-weight: 500;
+  }
+  .time-card__header {
+    height: 57px;
   }
 }
