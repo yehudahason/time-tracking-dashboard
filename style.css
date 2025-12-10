@@ -60,7 +60,7 @@ body {
   flex-direction: column;
   gap: 1.5rem;
   padding: 1rem;
-  /* width: calc(327px + 2rem); */
+  max-width: 500px;
 }
 
 /* ---------- PROFILE CARD (mobile) ---------- */
@@ -81,6 +81,7 @@ body {
   gap: 1rem;
   /* width: 90%; */
   border-radius: 15px;
+  height: 133px;
 }
 
 .profile-card__avatar {
@@ -106,11 +107,11 @@ body {
 .profile-card__tabs {
   display: flex;
   justify-content: center;
-  padding: 1rem 1.5rem 1.3rem;
+  padding: 1.8rem;
   align-items: center;
   overflow: hidden;
   gap: 2.8rem;
-  height: 83px;
+  height: 70px;
 }
 
 .tab {
@@ -236,6 +237,7 @@ body {
   .dashboard {
     margin: 0 auto;
     gap: 1.5rem;
+    max-width: none;
     height: calc(612px + 7rem);
     width: calc(670px);
   }
@@ -245,8 +247,7 @@ body {
     max-width: none;
     margin: 0;
     display: grid;
-    /* grid-template-rows: auto auto; */
-    grid-template-rows: 120px 83px;
+    grid-template-rows: 133px 70px;
     overflow: hidden;
     height: 203px;
     width: 638px;
@@ -255,8 +256,10 @@ body {
 
   .profile-card__tabs {
     justify-content: center;
+    align-items: center;
     gap: 4rem;
-    padding-inline: 2rem;
+    padding: 1.7rem;
+    height: 70px;
   }
   /* .profile-card {
     max-width: 540px;
@@ -268,6 +271,7 @@ body {
   .profile-card__top {
     padding: 2rem;
     border-radius: 15px;
+    height: 133px;
   }
 
   .profile-card__name {
