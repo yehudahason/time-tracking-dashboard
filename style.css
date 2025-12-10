@@ -60,7 +60,7 @@ body {
   flex-direction: column;
   gap: 1.5rem;
   padding: 1rem;
-  width: calc(327px + 2rem);
+  /* width: calc(327px + 2rem); */
 }
 
 /* ---------- PROFILE CARD (mobile) ---------- */
