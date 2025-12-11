@@ -58,9 +58,11 @@ async function update(type) {
   data.forEach((item) => {
     const title = item.title; // "Work", "Play", etc.
     const tf = item.timeframes[type]; // daily / weekly / monthly
-
-    // Update the card values
+    let previus;
+    if (type === "daily") previus = "Yesterday";
+    if (type === "weekly") previus = "Last Week";
+    if (type === "monthly") previus = "Last Month";
     cards[title].hours.textContent = `${tf.current}hrs`;
-    cards[title].prev.textContent = `Previous - ${tf.previous}hrs`;
+    cards[title].prev.textContent = `${previus} - ${tf.previous}hrs`;
   });
 }
