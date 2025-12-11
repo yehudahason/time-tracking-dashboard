@@ -182,7 +182,7 @@ body {
 }
 
 .time-card__top img {
-  width: 21px;
+  width: 1rem;
 }
 .time-card__title {
   font: var(--text-5m);
@@ -377,6 +377,9 @@ body {
   .time-card {
     width: 255px;
     height: 244px;
+  }
+  .time-card__top img {
+    width: 21px;
   }
   .time-card__hours {
     margin-top: 1.5rem;
