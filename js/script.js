@@ -51,8 +51,8 @@ monthlyBtn.addEventListener("click", () => {
 
 async function update(type) {
   const res = await fetch("./js/data.json");
-  const text = await res.text();
-  console.log("RAW RESPONSE:", text);
+  //   const text = await res.text();  To Check the json response
+  //   console.log("RAW RESPONSE:", text);
   const data = await res.json();
 
   data.forEach((item) => {
