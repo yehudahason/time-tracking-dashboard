@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <title>Time Tracking Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./images/favicon-32x32.png" type="image/png" />
+
+    <script type="module" src="./js/script.js" defer></script>
   </head>
   <body>
     <main class="page">
@@ -24,9 +27,13 @@
           </div>
 
           <nav class="profile-card__tabs">
-            <button class="tab tab--active">Daily</button>
-            <button class="tab">Weekly</button>
-            <button class="tab">Monthly</button>
+            <button class="tab tab--active" id="Daily" data-type="daily">
+              Daily
+            </button>
+            <button class="tab" id="Weekly" data-type="weekly">Weekly</button>
+            <button class="tab" id="Monthly" data-type="monthly">
+              Monthly
+            </button>
           </nav>
         </section>
 
@@ -39,7 +46,6 @@
             <div class="time-card__body">
               <header class="time-card__top">
                 <h2 class="time-card__title">Work</h2>
-                <!-- <span class="time-card__menu">•••</span> -->
                 <img src="./images/icon-ellipsis.svg" alt="" />
               </header>
 
