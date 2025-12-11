@@ -201,6 +201,7 @@ body {
 }
 .time-card__prev {
   font: var(--text-6);
+  color: var(--text-muted);
   font-weight: 400;
 }
 
@@ -343,6 +344,11 @@ body {
     padding: 2rem;
     width: 255px;
     height: 354px;
+  }
+
+  .profile-card__avatar {
+    height: 77px;
+    width: 77px;
   }
 
   .profile-card__name {
