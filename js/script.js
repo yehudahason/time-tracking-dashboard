@@ -50,7 +50,7 @@ monthlyBtn.addEventListener("click", () => {
 });
 
 async function update(type) {
-  const res = await fetch("../data.json");
+  const res = await fetch("./js/data.json");
   const text = await res.text();
   console.log("RAW RESPONSE:", text);
   const data = await res.json();
