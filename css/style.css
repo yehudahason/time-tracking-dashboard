@@ -107,7 +107,6 @@ body {
 .profile-card__tabs {
   display: flex;
   justify-content: center;
-  padding: 1.8rem;
   align-items: center;
   overflow: hidden;
   gap: 2.8rem;
@@ -117,7 +116,7 @@ body {
 .tab {
   background: none;
   border: none;
-  color: var(--text-muted);
+  color: #7078c9;
   font: var(--text-5m);
   font-weight: 400;
   cursor: pointer;
@@ -372,7 +371,7 @@ body {
     flex-direction: column;
     gap: 1.3rem;
     align-items: flex-start;
-    padding: 1.3rem;
+    padding: 1.7rem 2rem;
     height: 163px;
   }
   .time-card__body {
