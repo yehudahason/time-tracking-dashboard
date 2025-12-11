@@ -14,7 +14,7 @@
   --bg-main: hsl(226, 43%, 10%);
   --bg-card: hsl(235, 46%, 20%);
   --bg-profile: hsl(246, 80%, 60%);
-  --text-muted: hsl(236, 100%, 87%);
+  --text-muted: #bbc0ff;
   --text-main: #ffffff;
 
   --work: hsl(15, 100%, 70%);
