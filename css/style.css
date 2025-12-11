@@ -197,7 +197,13 @@ body {
 .flex-p-container {
   display: flex;
   justify-content: space-between;
+  gap: 1.5rem;
   align-items: center;
+  /* padding: 1.2rem 0; */
+}
+.flex-p-container p {
+  white-space: pre-wrap; /* Keep formatting but allow wrapping */
+  word-wrap: break-word; /* Break long words */
 }
 .time-card__prev {
   font: var(--text-6);
